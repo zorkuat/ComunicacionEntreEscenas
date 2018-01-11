@@ -1,24 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Rg-KJ-6zW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Saint Joseph Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SaintJosephController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Saint Joseph" translatesAutoresizingMaskIntoConstraints="NO" id="QYQ-cG-Uds">
+                                <rect key="frame" x="16" y="20" width="343" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="M83-fD-qek"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="- Hello Mr Pepit" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="F1i-Ug-Hdj">
+                                <rect key="frame" x="16" y="156" width="343" height="449"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUl-O8-bTX">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.82424770049999996" green="0.82424770049999996" blue="0.82424770049999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hello, Saint Joseph"/>
+                                <connections>
+                                    <action selector="botonSaludo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7p-Pz-OBn"/>
+                                    <segue destination="yql-q3-dvk" kind="presentation" identifier="saludo" id="cBE-Zd-Wq2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91270148750000002" green="0.86753177640000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QYQ-cG-Uds" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="29Y-uM-XnR"/>
+                            <constraint firstItem="NUl-O8-bTX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2P2-iL-prN"/>
+                            <constraint firstItem="F1i-Ug-Hdj" firstAttribute="top" secondItem="QYQ-cG-Uds" secondAttribute="bottom" constant="8" id="Drr-oL-tC9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NUl-O8-bTX" secondAttribute="trailing" constant="16" id="EXA-Lx-jo5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QYQ-cG-Uds" secondAttribute="trailing" constant="16" id="Jg3-9f-xtX"/>
+                            <constraint firstItem="QYQ-cG-Uds" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MFa-mr-OUl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NUl-O8-bTX" secondAttribute="bottom" constant="20" id="McK-3N-oLb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F1i-Ug-Hdj" secondAttribute="trailing" constant="16" id="c3E-fR-CfR"/>
+                            <constraint firstItem="F1i-Ug-Hdj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cwX-Hk-hgu"/>
+                            <constraint firstItem="F1i-Ug-Hdj" firstAttribute="top" secondItem="QYQ-cG-Uds" secondAttribute="bottom" constant="8" id="mMe-qN-Csd"/>
+                            <constraint firstItem="NUl-O8-bTX" firstAttribute="top" secondItem="F1i-Ug-Hdj" secondAttribute="bottom" constant="12" id="st3-Xq-OHl"/>
+                            <constraint firstItem="NUl-O8-bTX" firstAttribute="top" secondItem="F1i-Ug-Hdj" secondAttribute="bottom" constant="12" id="tsf-4Q-xJE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="vistaTexto" destination="F1i-Ug-Hdj" id="hDI-Hg-dx3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+        <!--Mr Pepit Controller-->
+        <scene sceneID="4gw-0c-ArH">
+            <objects>
+                <viewController id="yql-q3-dvk" customClass="MrPepitController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="coj-Su-9eW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10755959_1524128374492523_1104623324_n" translatesAutoresizingMaskIntoConstraints="NO" id="Yk3-5j-HzV">
+                                <rect key="frame" x="16" y="20" width="343" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="itt-SJ-zgx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqy-7E-9gK">
+                                <rect key="frame" x="16" y="617" width="132" height="30"/>
+                                <color key="backgroundColor" red="0.82424770049999996" green="0.82424770049999996" blue="0.82424770049999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hello, Saint Joseph"/>
+                                <connections>
+                                    <action selector="botonSaludo:" destination="yql-q3-dvk" eventType="touchUpInside" id="arJ-kc-z57"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ea-ws-gZh">
+                                <rect key="frame" x="227" y="617" width="132" height="30"/>
+                                <color key="backgroundColor" red="0.82424770049999996" green="0.82424770049999996" blue="0.82424770049999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Fuck you"/>
+                                <connections>
+                                    <action selector="botonInsulto:" destination="yql-q3-dvk" eventType="touchUpInside" id="UEn-mr-max"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rOa-So-JXE">
+                                <rect key="frame" x="16" y="167" width="343" height="442"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TWG-uB-sPt" firstAttribute="trailing" secondItem="7ea-ws-gZh" secondAttribute="trailing" constant="16" id="0me-p6-pfp"/>
+                            <constraint firstItem="Yk3-5j-HzV" firstAttribute="leading" secondItem="TWG-uB-sPt" secondAttribute="leading" constant="16" id="EzW-da-ZHT"/>
+                            <constraint firstItem="TWG-uB-sPt" firstAttribute="trailing" secondItem="Yk3-5j-HzV" secondAttribute="trailing" constant="16" id="F5f-2W-UjK"/>
+                            <constraint firstItem="dqy-7E-9gK" firstAttribute="leading" secondItem="TWG-uB-sPt" secondAttribute="leading" constant="16" id="GyP-mB-JvX"/>
+                            <constraint firstItem="7ea-ws-gZh" firstAttribute="top" secondItem="rOa-So-JXE" secondAttribute="bottom" constant="8" id="Jbw-7k-8vL"/>
+                            <constraint firstItem="dqy-7E-9gK" firstAttribute="top" secondItem="rOa-So-JXE" secondAttribute="bottom" constant="8" id="PGz-Fd-xwl"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dqy-7E-9gK" secondAttribute="trailing" constant="20" symbolic="YES" id="SBo-zj-3Zo"/>
+                            <constraint firstItem="TWG-uB-sPt" firstAttribute="trailing" secondItem="rOa-So-JXE" secondAttribute="trailing" constant="16" id="Tbv-GR-wuo"/>
+                            <constraint firstItem="7ea-ws-gZh" firstAttribute="leading" secondItem="dqy-7E-9gK" secondAttribute="trailing" constant="79" id="Vcy-u5-0CX"/>
+                            <constraint firstItem="rOa-So-JXE" firstAttribute="top" secondItem="Yk3-5j-HzV" secondAttribute="bottom" constant="19" id="Wr1-aX-N8G"/>
+                            <constraint firstItem="TWG-uB-sPt" firstAttribute="bottom" secondItem="7ea-ws-gZh" secondAttribute="bottom" constant="20" id="fjn-7d-6ao"/>
+                            <constraint firstItem="rOa-So-JXE" firstAttribute="leading" secondItem="TWG-uB-sPt" secondAttribute="leading" constant="16" id="lfH-WU-WPU"/>
+                            <constraint firstItem="Yk3-5j-HzV" firstAttribute="top" secondItem="TWG-uB-sPt" secondAttribute="top" id="q1g-5f-UL5"/>
+                            <constraint firstItem="TWG-uB-sPt" firstAttribute="bottom" secondItem="dqy-7E-9gK" secondAttribute="bottom" constant="20" id="vdt-hk-EZB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TWG-uB-sPt"/>
+                    </view>
+                    <connections>
+                        <outlet property="vistaTexto" destination="rOa-So-JXE" id="6md-cb-OKt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hV-22-sqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1351" y="438"/>
+        </scene>
+        <!--La Abuela Controller-->
+        <scene sceneID="AMe-dw-E1Z">
+            <objects>
+                <viewController id="8Rg-KJ-6zW" customClass="LaAbuelaController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Me-eL-jDT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="granny" translatesAutoresizingMaskIntoConstraints="NO" id="lI1-Ns-HTR">
+                                <rect key="frame" x="16" y="20" width="343" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="qch-7Z-dt7"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="- Hello Mr Pepit" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tp0-UF-mtU">
+                                <rect key="frame" x="16" y="156" width="343" height="443"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e10-g4-GUF">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.82424770049999996" green="0.82424770049999996" blue="0.82424770049999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hello, Saint Joseph"/>
+                                <connections>
+                                    <action selector="botonSaludo:" destination="8Rg-KJ-6zW" eventType="touchUpInside" id="uac-OX-nbX"/>
+                                    <segue destination="yql-q3-dvk" kind="presentation" identifier="saludo" id="R7W-HT-yzs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.68280019260000002" green="0.34710454369999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y27-XJ-Ek6" firstAttribute="trailing" secondItem="Tp0-UF-mtU" secondAttribute="trailing" constant="16" id="97q-xT-kpH"/>
+                            <constraint firstItem="Tp0-UF-mtU" firstAttribute="top" secondItem="lI1-Ns-HTR" secondAttribute="bottom" constant="8" id="9Lg-nM-B1G"/>
+                            <constraint firstItem="lI1-Ns-HTR" firstAttribute="leading" secondItem="y27-XJ-Ek6" secondAttribute="leading" constant="16" id="BjS-tf-uKj"/>
+                            <constraint firstItem="y27-XJ-Ek6" firstAttribute="trailing" secondItem="lI1-Ns-HTR" secondAttribute="trailing" constant="16" id="IaZ-Bj-SDN"/>
+                            <constraint firstItem="y27-XJ-Ek6" firstAttribute="bottom" secondItem="e10-g4-GUF" secondAttribute="bottom" constant="20" id="JgK-ON-0g5"/>
+                            <constraint firstItem="Tp0-UF-mtU" firstAttribute="top" secondItem="lI1-Ns-HTR" secondAttribute="bottom" constant="8" id="SDU-ON-hef"/>
+                            <constraint firstItem="Tp0-UF-mtU" firstAttribute="leading" secondItem="y27-XJ-Ek6" secondAttribute="leading" constant="16" id="f8h-dD-1kh"/>
+                            <constraint firstItem="y27-XJ-Ek6" firstAttribute="trailing" secondItem="e10-g4-GUF" secondAttribute="trailing" constant="16" id="i38-Dp-bkc"/>
+                            <constraint firstItem="lI1-Ns-HTR" firstAttribute="top" secondItem="y27-XJ-Ek6" secondAttribute="top" id="jVM-4Z-m5a"/>
+                            <constraint firstItem="e10-g4-GUF" firstAttribute="top" secondItem="Tp0-UF-mtU" secondAttribute="bottom" constant="18" id="nhC-IU-Utk"/>
+                            <constraint firstItem="e10-g4-GUF" firstAttribute="leading" secondItem="y27-XJ-Ek6" secondAttribute="leading" constant="16" id="rQI-pU-OBU"/>
+                            <constraint firstItem="e10-g4-GUF" firstAttribute="top" secondItem="Tp0-UF-mtU" secondAttribute="bottom" constant="18" id="xGc-Lz-U8z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="y27-XJ-Ek6"/>
+                    </view>
+                    <connections>
+                        <outlet property="vistaTexto" destination="Tp0-UF-mtU" id="P1a-t9-D6d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqx-pM-heJ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="808.24587706146929"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="10755959_1524128374492523_1104623324_n" width="480" height="480"/>
+        <image name="Saint Joseph" width="480" height="480"/>
+        <image name="granny" width="626" height="261"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="R7W-HT-yzs"/>
+    </inferredMetricsTieBreakers>
 </document>

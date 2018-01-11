@@ -13,6 +13,12 @@
 		0915CCC12007CA41009B3017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0915CCC02007CA41009B3017 /* Assets.xcassets */; };
 		0915CCC42007CA41009B3017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0915CCC22007CA41009B3017 /* LaunchScreen.storyboard */; };
 		0915CCC72007CA41009B3017 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0915CCC62007CA41009B3017 /* main.m */; };
+		0915CCD52007CCDF009B3017 /* 10755959_1524128374492523_1104623324_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0915CCD32007CCDF009B3017 /* 10755959_1524128374492523_1104623324_n.jpg */; };
+		0915CCD62007CCDF009B3017 /* Saint Joseph.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0915CCD42007CCDF009B3017 /* Saint Joseph.jpg */; };
+		0915CD012007CE35009B3017 /* granny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0915CD002007CE35009B3017 /* granny.jpg */; };
+		0915CD042007D241009B3017 /* SaintJosephController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0915CD032007D241009B3017 /* SaintJosephController.m */; };
+		0915CD072007D2CD009B3017 /* MrPepitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0915CD062007D2CD009B3017 /* MrPepitController.m */; };
+		0915CD0A2007D3A5009B3017 /* LaAbuelaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0915CD092007D3A5009B3017 /* LaAbuelaController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,16 @@
 		0915CCC32007CA41009B3017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0915CCC52007CA41009B3017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0915CCC62007CA41009B3017 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0915CCD32007CCDF009B3017 /* 10755959_1524128374492523_1104623324_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10755959_1524128374492523_1104623324_n.jpg; sourceTree = SOURCE_ROOT; };
+		0915CCD42007CCDF009B3017 /* Saint Joseph.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Saint Joseph.jpg"; sourceTree = SOURCE_ROOT; };
+		0915CD002007CE35009B3017 /* granny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = granny.jpg; sourceTree = SOURCE_ROOT; };
+		0915CD022007D241009B3017 /* SaintJosephController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaintJosephController.h; sourceTree = "<group>"; };
+		0915CD032007D241009B3017 /* SaintJosephController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaintJosephController.m; sourceTree = "<group>"; };
+		0915CD052007D2CD009B3017 /* MrPepitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MrPepitController.h; sourceTree = "<group>"; };
+		0915CD062007D2CD009B3017 /* MrPepitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MrPepitController.m; sourceTree = "<group>"; };
+		0915CD082007D3A5009B3017 /* LaAbuelaController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaAbuelaController.h; sourceTree = "<group>"; };
+		0915CD092007D3A5009B3017 /* LaAbuelaController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaAbuelaController.m; sourceTree = "<group>"; };
+		0915CD0B2007E466009B3017 /* MrPepitDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MrPepitDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +74,25 @@
 		0915CCB62007CA40009B3017 /* ComunicacionEntreEscenas */ = {
 			isa = PBXGroup;
 			children = (
+				0915CD002007CE35009B3017 /* granny.jpg */,
 				0915CCB72007CA41009B3017 /* AppDelegate.h */,
 				0915CCB82007CA41009B3017 /* AppDelegate.m */,
 				0915CCBA2007CA41009B3017 /* ViewController.h */,
 				0915CCBB2007CA41009B3017 /* ViewController.m */,
 				0915CCBD2007CA41009B3017 /* Main.storyboard */,
+				0915CCD32007CCDF009B3017 /* 10755959_1524128374492523_1104623324_n.jpg */,
+				0915CCD42007CCDF009B3017 /* Saint Joseph.jpg */,
 				0915CCC02007CA41009B3017 /* Assets.xcassets */,
 				0915CCC22007CA41009B3017 /* LaunchScreen.storyboard */,
 				0915CCC52007CA41009B3017 /* Info.plist */,
 				0915CCC62007CA41009B3017 /* main.m */,
+				0915CD022007D241009B3017 /* SaintJosephController.h */,
+				0915CD032007D241009B3017 /* SaintJosephController.m */,
+				0915CD0B2007E466009B3017 /* MrPepitDelegate.h */,
+				0915CD052007D2CD009B3017 /* MrPepitController.h */,
+				0915CD062007D2CD009B3017 /* MrPepitController.m */,
+				0915CD082007D3A5009B3017 /* LaAbuelaController.h */,
+				0915CD092007D3A5009B3017 /* LaAbuelaController.m */,
 			);
 			path = ComunicacionEntreEscenas;
 			sourceTree = "<group>";
@@ -129,9 +155,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0915CD012007CE35009B3017 /* granny.jpg in Resources */,
 				0915CCC42007CA41009B3017 /* LaunchScreen.storyboard in Resources */,
+				0915CCD52007CCDF009B3017 /* 10755959_1524128374492523_1104623324_n.jpg in Resources */,
 				0915CCC12007CA41009B3017 /* Assets.xcassets in Resources */,
 				0915CCBF2007CA41009B3017 /* Main.storyboard in Resources */,
+				0915CCD62007CCDF009B3017 /* Saint Joseph.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0915CD0A2007D3A5009B3017 /* LaAbuelaController.m in Sources */,
 				0915CCBC2007CA41009B3017 /* ViewController.m in Sources */,
 				0915CCC72007CA41009B3017 /* main.m in Sources */,
+				0915CD072007D2CD009B3017 /* MrPepitController.m in Sources */,
 				0915CCB92007CA41009B3017 /* AppDelegate.m in Sources */,
+				0915CD042007D241009B3017 /* SaintJosephController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
